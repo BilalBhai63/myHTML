@@ -8,6 +8,7 @@
     padding: 12px 20px;
     display: block;
     color: white;
+        transition-duration: 0.3s;
  }
  
  #menu ul li a:hover{
@@ -20,8 +21,8 @@
  ul li ul{
      position: absolute;
      display: none;
-     overflow: hidden;
-     
+     transition-duration: 0.3s;
+    
  }
  ul li ul li a{
      width: 250px;    
@@ -32,6 +33,7 @@
  ul li:hover ul{
      display: block;
      box-shadow: 10px 10px 16px gray;
+
  }
  #formelelist{
      width: 30%;
@@ -43,7 +45,6 @@
      
  }
  #formelelist ul{
-     
      font-size: 120%;
      background-color: black;
      color: white;
@@ -52,17 +53,21 @@
      padding-left: 10px;
      padding: 10px;
      font-size: 20px;
- }
- #formelelist ul li:hover{
-     background-color: white;
-     color: black;
-     cursor: pointer;
+         transition-duration: 0.4s;
+
  }
  #formelelist ul li:nth-child(even){
      background-color: green;
      color: white;
      
  }
+ 
+ #formelelist ul li:hover{
+     background-color: white;
+     color: black;
+     cursor: pointer;
+ }
+ 
  .h{
      width: 90%;
      margin: auto;
@@ -84,7 +89,6 @@
  fieldset{
      padding: 15px;  
      border-radius: 15px; 
-     box-shadow: 15px 15px 29px gray;
  }
  input,select,option,textarea,button,keygen,fieldset,legend{
        padding-left: 10px;
@@ -121,6 +125,8 @@
     margin-top: 10px;
     padding-left: 20px;
     font-size: 120%;
+    transition-duration: 0.3s;
+
 }
 #attlist ul li:hover{
     background-color: #99ff00;
@@ -130,13 +136,43 @@
 input, select,button,textarea{
     padding: 10px;
     width: 50%;
+    background-color: green;
+    color: white;
+    transition-duration: 0.3s;
     
+}
+input,textarea,select{
+    background-color: green;
+    color: white;
+        transition-duration: 0.3s;
 }
 input,textarea,select:hover{
     background-color: white;
     color: black;
     box-shadow: 4px 4px 4px gray;
 }
+input[type="text"]{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    transition-duration: 0.3s;
+}
+input[type="text"]:hover{
+    background-color: white;
+    color: black;   
+        box-shadow: 2px 2px 2px 2px gray;
+
+}
 button:hover{
-    box-shadow: 4px 4px 8px gray;
+    box-shadow: 2px 2px 2px 2px gray;
+    background-color: white;
+    color: black;
+}
+textarea{
+    background-color: lightgray;
+    color: black;
+}   
+textarea:focus{
+    background-color: white;
+    color: blue;
 }
